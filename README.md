@@ -147,17 +147,3 @@ async fn main() -> Result<(), NetworkError> {
     Ok(())
 }
 ```
-
-
-
-```rust
-use shadownetwork2d::*;
-use bytes::Bytes;
-
-#[tokio::main]
-async fn main() -> Result<(), NetworkError> {
-    let mut traveler = Traveler::new();
-    
-    traveler.travel_to_tcp("127.0.0.1:8080").await?;
-    
-    let
